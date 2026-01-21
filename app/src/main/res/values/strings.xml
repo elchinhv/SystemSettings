@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">System Settings</string>
+    <string name="opening_system_settings">Opening System Settings…</string>
+    <string name="failed_to_open_system_settings">System settings are not available on this device.</string>
+</resources>
