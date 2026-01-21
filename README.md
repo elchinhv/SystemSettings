@@ -12,7 +12,7 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/elchinhv/SystemSettings.git](https://github.com/elchinhv/SystemSettings.git)
+    git clone https://github.com/elchinhv/SystemSettings.git
     ```
 2.  **Open in Android Studio:**
     Open the project folder. Ensure you are using a version of Android Studio that supports AGP 9.0.0+.
