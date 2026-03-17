@@ -1,5 +1,5 @@
 [versions]
-agp = "9.0.0-alpha11"
+agp = "9.1.0"
 material = "1.13.0"
 
 [libraries]
