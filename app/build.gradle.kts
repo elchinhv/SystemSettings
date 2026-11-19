@@ -22,8 +22,8 @@ android {
         applicationId = "com.olcane.systemsettings"
         minSdk = 24
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = (project.findProperty("versionCode") as String?)?.toInt() ?: 2
+        versionName = "1.2"
     }
 
     signingConfigs {
