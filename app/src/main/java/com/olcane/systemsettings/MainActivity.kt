@@ -1,17 +1,18 @@
 package com.olcane.systemsettings
 
+import android.app.Activity
 import android.app.ActivityOptions
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+// A plain framework Activity with a framework theme: no AndroidX or Material
+// code is loaded, so a cold start of this app does as little as possible
+// before handing over to the system Settings app.
+class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         openSystemSettings()
     }
@@ -42,6 +43,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showErrorToast() {
-        Toast.makeText(this, R.string.failed_to_open_system_settings, Toast.LENGTH_LONG).show()
+        // Application context: the toast outlives this activity, which finishes at once.
+        Toast.makeText(applicationContext, R.string.failed_to_open_system_settings, Toast.LENGTH_LONG).show()
     }
 }

@@ -1,14 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.SystemSettings" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:backgroundDimEnabled">false</item>
+<resources>
+    <!-- Framework theme only: the activity is never visible, so no Material theme is needed. -->
+    <style name="Theme.SystemSettings" parent="@android:style/Theme.Translucent.NoTitleBar">
         <item name="android:windowAnimationStyle">@null</item>
     </style>
-
-    <style name="Theme.SystemSettings" parent="Base.Theme.SystemSettings" />
 </resources>
