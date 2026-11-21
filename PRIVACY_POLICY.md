@@ -1,45 +1,49 @@
-
 # Privacy Policy
 
 **Privacy Policy for System Settings**
 
-**Last updated:** 21 Jan 2026
+**Last updated:** 21 November 2026
 
-**1. Introduction**
+## 1. Introduction
 
-This Privacy Policy describes how the **System Settings** app ("we," "our," or "us") handles your information. We are committed to protecting your privacy. This app is a utility tool developed by olcane.com (package name: `com.olcane.systemsettings`).
+This Privacy Policy explains how the **System Settings** Android app (package name: `com.olcane.systemsettings`), published by olcane.com ("we", "our", "us"), handles information. It applies to the app as distributed on Google Play.
 
-**2. Data Collection and Use**
+## 2. Summary
 
-**We do not collect, store, share, or transmit any personal user data.**
+**The app does not collect, store, process, share, or transmit any user data.** Nothing leaves your device as a result of using this app.
 
-The **System Settings** app functions solely as a shortcut to launch your device's native settings menu.
+## 3. What the App Does
 
-* **No Personal Information:** We do not ask for, access, or store names, email addresses, or phone numbers.
-* **No Device Data:** We do not track your location, device ID, or usage statistics.
-* **No Internet Access:** The app does not request the `INTERNET` permission and cannot transmit data to any external server.
+The app has one function: when opened, it launches your device's built-in Android Settings screen and then closes itself. It has no user interface of its own, no accounts, no sign-in, no forms, and no input fields.
 
-**3. Permissions**
-The app operates with the absolute minimum permissions required to function on the Android operating system.
+## 4. Data Collection and Sharing
 
-* **Query Permissions:** The app uses the `<queries>` element in the Manifest to detect the existence of the system settings app on your device (`android.settings.SETTINGS`). This is a technical requirement for Android 11 (API level 30) and above and does not grant access to user data.
+- The app does not collect any information from or about you or your device.
+- The app does not share any information with third parties.
+- The app does not request the `INTERNET` permission or any other permission, and therefore has no ability to send data off your device.
+- The app does not use cookies, advertising identifiers, analytics, crash reporting, or tracking of any kind.
 
-**4. Third-Party Services**
+This is consistent with the app's Data safety section on Google Play, which declares that no data is collected or shared.
 
-This app does not integrate with any third-party analytics (such as Google Analytics or Firebase) or advertising networks. It contains no third-party SDKs that collect user data.
+## 5. Permissions and Technical Details
 
-**5. Children’s Privacy**
+The app's manifest contains a `<queries>` element for the `android.settings.SETTINGS` intent. This is required on Android 11 (API level 30) and above so the app can check that a Settings screen exists on the device before opening it. It does not give the app access to any personal or device information.
 
-Since our app does not collect any data, it is safe for users of all ages. We do not knowingly collect personally identifiable information from children under the age of 13.
+## 6. Third-Party Services
 
-**6. Changes to This Privacy Policy**
+The app does not include any third-party libraries, SDKs, analytics services, or advertising networks.
 
-We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted.
+## 7. Children's Privacy
 
-**7. Contact Us**
+The app does not collect information from anyone, including children under the age of 13.
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
+## 8. Changes to This Privacy Policy
 
-**Email:** elchinh@gmail.com
+If this policy changes, the updated version will be posted on this page with a new "Last updated" date.
 
-**Developer:** Elchin H
+## 9. Developer Contact
+
+For questions about this Privacy Policy, you can contact the developer at the developer's own email address:
+
+- **Developer:** Elchin H (olcane.com)
+- **Developer contact email:** elchinh@gmail.com
