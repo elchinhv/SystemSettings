@@ -18,7 +18,9 @@ class MainActivity : Activity() {
     }
 
     private fun openSystemSettings() {
-        val intent = Intent(Settings.ACTION_SETTINGS)
+        // NEW_TASK puts Settings in its own task, so it does not stack on top of
+        // this app's task and this app's task can be removed below.
+        val intent = Intent(Settings.ACTION_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
 
         try {
             if (intent.resolveActivity(packageManager) != null) {
@@ -37,8 +39,9 @@ class MainActivity : Activity() {
             // Fallback for any other unexpected runtime crashes
             showErrorToast()
         } finally {
-            // Ensure the invisible activity finishes regardless of the outcome
-            finish()
+            // Finish the invisible activity and remove this app's task from the
+            // stack and from Recents, whatever the outcome
+            finishAndRemoveTask()
         }
     }
 
